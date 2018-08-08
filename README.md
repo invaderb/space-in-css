@@ -1,2 +1,2 @@
 # space-in-css
-Space built with just html and css
+Space with our neighboring planets built with html and css

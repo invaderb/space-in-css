@@ -1,0 +1,63 @@
+<html>
+<head>
+	<link rel="stylesheet" href="style.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script>
+		jQuery(document).ready(function () {
+			// Click events
+			$('#zoom_in').click(function () {
+				$('#planets').css('zoom', '+=5%')
+			});
+			$('#zoom_out').click(function () {
+				$('#planets').css('zoom', '-=5%')
+			});
+			$('#zoom_reset').click(function () {
+				$('#planets').css('zoom', '100%')
+			});
+
+		});
+	</script>
+</head>
+<body>
+	<div class="controls">
+		<h2>Zoom</h2>
+		<div class="zbuttons">
+			<a id="zoom_out" href="#">-</a>
+			<a id="zoom_in" href="#">+</a>
+		</div>
+		<a id="zoom_reset" href="#">reset zoom</a>
+	</div>
+	<!-- Right below is an image of the sun -->
+	<div id="planets" style="zoom: 100%">
+		<img id="sun" src="img/sun.png">
+		<!-- Planets -->
+		<div id="mercury-orbit">
+			<img id="mercury" src="img/mercury.png" />
+		</div>
+		<div id="venus-orbit">
+			<img id="venus" src="img/venus.png" />
+		</div>
+		<div id='earth-orbit'>
+			<img id="earth" src="img/earth.png">
+		</div>
+		<div id='mars-orbit'>
+			<img id="mars" src="img/mars.png">
+		</div>
+		<div id='jupiter-orbit'>
+			<img id="jupiter" src="img/jupiter.png">
+		</div>
+		<div id='saturn-orbit'>
+			<img id="saturn" src="img/saturn.png">
+		</div>
+		<div id='uranus-orbit'>
+			<img id="uranus" src="img/uranus.png">
+		</div>
+		<div id='neptune-orbit'>
+			<img id="neptune" src="img/neptune.png">
+		</div>
+		<div id='pluto-orbit'>
+			<img id="pluto" src="img/pluto.png">
+		</div>
+	</div>
+</body>
+</html>
